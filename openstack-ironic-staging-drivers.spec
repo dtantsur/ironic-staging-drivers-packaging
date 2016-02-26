@@ -14,9 +14,6 @@ Source0:    http://tarballs.openstack.org/%{orig_name}/%{orig_name}-master.tar.g
 
 BuildArch:  noarch
 
-%package -n openstack-%{orig_name}
-Summary:    Staging drivers for OpenStack Ironic
-
 BuildRequires:  python2-devel
 BuildRequires:  python-pbr
 BuildRequires:  python-setuptools
@@ -24,14 +21,6 @@ BuildRequires:  git
 
 Requires:   python-oslo-i18n
 Requires:   python-oslo-utils
-
-%description -n openstack-%{orig_name}
-The Ironic Staging Drivers is used to hold out-of-tree Ironic drivers
-which doesn't have means to provide a 3rd Party CI at this point in
-time which is required by Ironic.
-
-The intention of this project is to provide a common place for useful
-drivers resolving the "hundreds of different download sites" problem.
 
 
 %package -n openstack-%{orig_name}-tests
